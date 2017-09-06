@@ -41,11 +41,21 @@
 @media only screen and (max-width : 480px)
 
   .header
+    height: auto
+    text-align: center
+    position: relative
+    .hamburger
+      left: 0px
+      top: 65px
+      z-index: 10
     h3
       font-size: 36px
-      left: 55%
+      left: 0%
+      margin-left: 0px
+      position: relative
     &-cat, &-dog
       width: 100%
+      padding: 10px 0px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
