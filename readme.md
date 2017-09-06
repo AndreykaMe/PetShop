@@ -7,4 +7,9 @@
     <li>Push template for site-design development</li>
     <li>Create design for nav-menu</li>
 </ul>
-<p>Logo for nav <br> <img src="https://raw.githubusercontent.com/AndreykaMe/PetShop/design/app/img/logo.jpg"><br></p>
+<h2> Second Day </h2>
+<ul>
+    <li>Create header-design</li>
+    <li>Create animation for header-menu</li>
+    <li>Optimize header for mobile resolutions</li>
+</ul>
