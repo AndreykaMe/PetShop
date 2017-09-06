@@ -10,7 +10,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+
+  .header
+    &-cat, &-dog
+      padding: 100px 0px
 
 
 /* Small Devices, Tablets */
@@ -27,11 +30,22 @@
       font-size: 20px
       border-top: 1px solid #b6b6b6
       line-height: 2.5
+    .header
+      &-cat, &-dog
+        padding: 100px 15px
+        img
+          height: 220px
+          width: 220px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
 
+  .header
+    h3
+      font-size: 36px
+      left: 55%
+    &-cat, &-dog
+      width: 100%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

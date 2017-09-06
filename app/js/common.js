@@ -15,14 +15,14 @@ $(function() {
     });
 
 	$(".header-dog").on('click', function() {
-	    $(".header-cat").css('transform', 'translateX(100%)');
+	    $(".header-cat").css('transform', 'translateX(150%)');
         $(".header-dog").css('transform', 'translateX(50%)');
         $(".header-hmb").fadeIn('slow');
     });
 
     $(".header-cat").on('click', function() {
         $(".header-cat").css('transform', 'translateX(-50%)');
-        $(".header-dog").css('transform', 'translateX(-100%)');
+        $(".header-dog").css('transform', 'translateX(-150%)');
         $(".header-hmb").fadeIn('slow');
     });
 
