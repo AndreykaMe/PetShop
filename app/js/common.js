@@ -1,5 +1,7 @@
 $(function() {
 
+    $petType = 'none';
+
 	$(".navbar-toggle").on('click', function() {
 	    if($(".navbar-collapse").hasClass('in')) {
             $(".navbar-toggle").removeClass('is-active');
@@ -25,6 +27,11 @@ $(function() {
         $(".header-hmb").fadeOut('slow');
         $(".header-cat").removeClass('active');
         $(".header-dog").removeClass('active');
+        $(".hello-pet").animate( {
+            height: '0px',
+            padding: '0px'
+        });
+        $petType = 'none';
     });
 
 	$(".header-dog").on('click', function() {
@@ -39,6 +46,12 @@ $(function() {
             $(".header-hmb").fadeIn('slow');
         }
         $(".header-dog").addClass('active');
+        $("#hp-img").attr('src', 'img/Doggie-happy.png');
+        $(".hello-pet").animate( {
+            height: '100%',
+            padding: '50px'
+        });
+        $petType = 'dog';
     });
 
     $(".header-cat").on('click', function() {
@@ -55,6 +68,13 @@ $(function() {
             $(".header-hmb").fadeIn('slow');
         }
         $(".header-cat").addClass('active');
+        $("#hp-img").attr('src', 'img/Cattie.jpg');
+        $(".hello-pet").animate( {
+            height: '100%',
+            padding: '50px'
+        });
+        $petType = 'cat';
     });
+
 
 });

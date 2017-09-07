@@ -27,6 +27,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+    background-color: $grey
 
 body
 	font-size: 16px
@@ -89,7 +90,7 @@ body
   height: 500px
   display: flex
   overflow: hidden
-  background-color: #e6e6e6
+  background-color: $grey
   .hamburger
     position: absolute
     display: none
@@ -120,8 +121,8 @@ body
     img
       height: 300px
       width: 300px
-      border: solid 10px #ff552f
-      background-color: #b5b5b5
+      border: solid 10px $accent
+      background-color: darken($grey, 10%)
       border-radius: 10em
       transition: all .5s ease
       &:hover
@@ -135,5 +136,40 @@ body
     //transform: translateX(50%)
     //transform: translateX(-100%)
 
+.hello-pet
+  background-color: whitesmoke
+  font-family: 'Raleway', sans-serif
+  padding: 0px
+  height: 0px
+  overflow: hidden
+.hello-pet-select
+  text-align: center
+  h3
+    font-size: 46px
+
+.hp-name
+  p
+    font-size: 32px
+    margin: 6px
+  form
+    input, select, button
+      margin: 6px
+      font-size: 20px
+      padding-left: 10px
+      padding: 5px
+      width: 300px
+      outline: none
+      border: solid 2px $accent
+    button
+      background-color: #fff
+      transition: background-color .25s ease
+      &:hover
+        background-color: $accent
+
+
+.hp-action
+  img
+    width: 500px
+    height: 500px
 
 @import "media" // Всегда в конце
