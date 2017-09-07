@@ -88,6 +88,7 @@ body
 .header
   height: 500px
   display: flex
+  overflow: hidden
   background-color: #e6e6e6
   .hamburger
     position: absolute
@@ -104,7 +105,13 @@ body
   &-dog, &-cat
     transition: all .5s ease
     text-align: center
+    overflow: hidden
     padding: 100px
+    &.active
+      img
+        transform: scale(1.04)
+        box-shadow: 0 0 5px black
+        border-color: whitesmoke
     p
       font-size: 28px
       font-weight: 500
