@@ -172,4 +172,96 @@ body
     width: 500px
     height: 500px
 
+.shop
+  border: solid 4px $accent
+  background-color: whitesmoke
+  font-family: 'Raleway', sans-serif
+  padding: 40px
+  .shop-menu
+    text-align: center
+    p
+      font-size: 32px
+      font-weight: 600
+      color: $dark
+    ul
+      padding-left: 0
+      a
+        text-decoration: none
+      li
+        font-size: 24px
+        list-style: none
+        font-weight: 600
+        border: solid 1.5px #b8b3b6
+        padding: 2px
+        margin: 3px 0px
+        color: $accent
+        border-radius: 0.3em
+        transition: all .25s ease
+        &:hover
+          background-color: $accent
+          color: whitesmoke
+
+  .shop-content
+    text-align: center
+    ul
+      position: relative
+      left: 0
+      li
+        list-style: none
+        margin: auto
+        width: 180px
+        display: inline-block
+        padding: 5px
+        background-color: $grey
+        font-size: 24px
+        font-weight: 800
+        color: $grey
+        border: solid 2px black
+        transition: all .25s ease
+        color: $accent
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        &:hover
+          background-color: $accent
+          color: $grey
+        &.active
+          background-color: $accent
+          color: $grey
+        &:nth-child(1)
+          border-right: 0px
+          border-bottom-left-radius: 1em
+          border-top-left-radius: 1em
+        &:nth-child(2)
+          border-left: 0px
+          transform: translateX(-10px)
+          border-top-right-radius: 1em
+          border-bottom-right-radius: 1em
+
+.shop-pieces
+  padding-top: 30px
+  .shop-piece
+    height: 100%
+    width: 90%
+    margin-left: 20px
+    border: solid 2px $dark
+    padding: 5px
+    border-radius: 1em
+    img
+      width: 70%
+      height: 110px
+    p
+      font-size: 20px
+    span
+      font-size: 20px
+      padding-right: 25px
+      font-family: 'firasans'
+    a
+      font-size: 20px
+      font-family: 'firasans'
+      padding: 10px
+      background-color: #23c92c
+      color: white
+
 @import "media" // Всегда в конце

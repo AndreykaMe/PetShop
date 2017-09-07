@@ -5,8 +5,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+  /**/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -14,7 +13,17 @@
   .header
     &-cat, &-dog
       padding: 100px 0px
-
+  .shop
+    .shop-content
+      ul
+        left: -2%
+  .shop-pieces
+    .shop-piece
+      margin: auto
+      margin-top: 10px
+      width: 70%
+      img
+        width: 40%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -39,6 +48,15 @@
 
     .hello-pet-menu
       text-align: center
+
+    .shop
+      .shop-content
+        ul
+          top: 15px
+          left: -4%
+          li
+            width: 150px
+            font-size: 22px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -67,6 +85,23 @@
     form
       input, select, button
         width: 220px
+
+  .shop
+    .shop-content
+      ul
+        top: 15px
+        left: -4%
+        display: none
+        li
+          width: 70px
+          font-size: 13px
+  .shop-pieces
+    .shop-piece
+      margin: auto
+      margin-top: 10px
+      width: 100%
+      img
+        width: 40%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

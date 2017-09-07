@@ -13,3 +13,13 @@
     <li>Create animation for header-menu</li>
     <li>Optimize header for mobile resolutions</li>
 </ul>
+<h2> Third Day </h2>
+<ul>
+    <li>Create animation-block for header</li>
+    <li>Fix some bugs in header</li>
+    <li>Mobile-version for animation-block</li>
+    <li>Create shop-section</li>
+    <li>Add switching-button for shop-section</li>
+    <li>Create menu in shop-section</li>
+    <li>Mobile-adaptive shop-section</li>
+</ul>

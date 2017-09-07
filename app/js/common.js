@@ -76,5 +76,15 @@ $(function() {
         $petType = 'cat';
     });
 
+    $("#shop-li-recommend").on('click', function() {
+        $("#shop-li-new").removeClass('active');
+        $("#shop-li-recommend").addClass('active');
+    });
+
+    $("#shop-li-new").on('click', function() {
+        $("#shop-li-recommend").removeClass('active');
+        $("#shop-li-new").addClass('active');
+    });
+
 
 });
