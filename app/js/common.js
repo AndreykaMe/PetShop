@@ -49,7 +49,7 @@ $(function() {
         $("#hp-img").attr('src', 'img/Doggie-happy.png');
         $(".hello-pet").animate( {
             height: '100%',
-            padding: '50px'
+            padding: '10px'
         });
         $petType = 'dog';
     });
@@ -71,7 +71,7 @@ $(function() {
         $("#hp-img").attr('src', 'img/Cattie.jpg');
         $(".hello-pet").animate( {
             height: '100%',
-            padding: '50px'
+            padding: '10px'
         });
         $petType = 'cat';
     });
