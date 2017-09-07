@@ -5,23 +5,103 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+  /**/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
 
+  .header
+    &-cat, &-dog
+      padding: 100px 0px
+  .shop
+    .shop-content
+      ul
+        left: -2%
+  .shop-pieces
+    .shop-piece
+      margin: auto
+      margin-top: 10px
+      width: 70%
+      img
+        width: 40%
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
 
+
+    .hamburger
+      margin-top: 12px
+      height: 56px
+      padding: 15px 10px
+    .login
+      text-align: left
+      padding-left: 10px
+      font-size: 20px
+      border-top: 1px solid #b6b6b6
+      line-height: 2.5
+    .header
+      &-cat, &-dog
+        padding: 100px 15px
+        img
+          height: 220px
+          width: 220px
+
+    .hello-pet-menu
+      text-align: center
+
+    .shop
+      .shop-content
+        ul
+          top: 15px
+          left: -4%
+          li
+            width: 150px
+            font-size: 22px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
 
+  .header
+    height: auto
+    text-align: center
+    position: relative
+    .hamburger
+      left: 0px
+      top: 65px
+      z-index: 10
+    h3
+      font-size: 36px
+      left: 0%
+      margin-left: 0px
+      position: relative
+    &-cat, &-dog
+      width: 100%
+      padding: 10px 0px
+
+  .hp-name
+    p
+      white-space: nowrap
+      font-size: 26px
+    form
+      input, select, button
+        width: 220px
+
+  .shop
+    .shop-content
+      ul
+        top: 15px
+        left: -4%
+        display: none
+        li
+          width: 70px
+          font-size: 13px
+  .shop-pieces
+    .shop-piece
+      margin: auto
+      margin-top: 10px
+      width: 100%
+      img
+        width: 40%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

@@ -18,6 +18,7 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/bootstrap-grid/bootstrap.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

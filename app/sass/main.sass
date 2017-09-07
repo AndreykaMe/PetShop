@@ -1,4 +1,3 @@
-@import "bourbon"
 @import "fonts"
 @import "libs"
 @import "vars"
@@ -28,6 +27,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+    background-color: $grey
 
 body
 	font-size: 16px
@@ -37,9 +37,231 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 
+.navbar-default
+  margin-bottom: 0
+  z-index: 3
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+.navbar-header
+  height: 80px
+  .navbar-brand
+    height: inherit
+    padding: 2px
+    display: flex
+    img
+      display: block
+      margin: auto
+      height: 100%
+      width: auto
+      border-radius: 10em
+
+.navbar-collapse
+  ul
+    padding-top: 15px
+    padding-left: 25px
+    li
+      font-family: 'Raleway', sans-serif
+      font-size: 20px
+      line-height: 80px
+      font-weight: 400
+      margin: auto
+      line-height: 80px
+      white-space: nowrap
+.login
+  text-align: right
+  font-size: 24px
+  line-height: 80px
+  font-family: "Raleway", sans-serif
+  font-weight: 300
+  color: #585858
+  a
+    text-decoration: none
+    color: #585858
+    white-space: nowrap
+    padding: 0 15px
+    transition: font-weight .1s ease
+    &:hover
+      font-weight: 500
+
+.header
+  height: 500px
+  display: flex
+  overflow: hidden
+  background-color: $grey
+  .hamburger
+    position: absolute
+    display: none
+    z-index: 5
+  h3
+    position: absolute
+    left: 50%
+    margin-left: -160px
+    font-size: 42px
+    font-family: 'Raleway', sans-serif
+    z-index: 5
+    white-space: nowrap
+  &-dog, &-cat
+    transition: all .5s ease
+    text-align: center
+    overflow: hidden
+    padding: 100px
+    &.active
+      img
+        transform: scale(1.04)
+        box-shadow: 0 0 5px black
+        border-color: whitesmoke
+    p
+      font-size: 28px
+      font-weight: 500
+      white-space: nowrap
+      font-family: 'Raleway', sans-serif
+    img
+      height: 300px
+      width: 300px
+      border: solid 10px $accent
+      background-color: darken($grey, 10%)
+      border-radius: 10em
+      transition: all .5s ease
+      &:hover
+        transform: scale(1.04)
+        box-shadow: 0 0 5px black
+        border-color: whitesmoke
+  &-cat
+    //transform: translateX(100%)
+    //transform: translateX(-50%)
+  &-dog
+    //transform: translateX(50%)
+    //transform: translateX(-100%)
+
+.hello-pet
+  background-color: whitesmoke
+  font-family: 'Raleway', sans-serif
+  padding: 0px
+  height: 0px
+  overflow: hidden
+.hello-pet-select
+  text-align: center
+  h3
+    font-size: 46px
+
+.hp-name
+  p
+    font-size: 32px
+    margin: 6px
+  form
+    input, select, button
+      margin: 6px
+      font-size: 20px
+      padding-left: 10px
+      padding: 5px
+      width: 300px
+      outline: none
+      border: solid 2px $accent
+    button
+      background-color: #fff
+      transition: background-color .25s ease
+      &:hover
+        background-color: $accent
+
+
+.hp-action
+  img
+    width: 500px
+    height: 500px
+
+.shop
+  border: solid 4px $accent
+  background-color: whitesmoke
+  font-family: 'Raleway', sans-serif
+  padding: 40px
+  .shop-menu
+    text-align: center
+    p
+      font-size: 32px
+      font-weight: 600
+      color: $dark
+    ul
+      padding-left: 0
+      a
+        text-decoration: none
+      li
+        font-size: 24px
+        list-style: none
+        font-weight: 600
+        border: solid 1.5px #b8b3b6
+        padding: 2px
+        margin: 3px 0px
+        color: $accent
+        border-radius: 0.3em
+        transition: all .25s ease
+        &:hover
+          background-color: $accent
+          color: whitesmoke
+
+  .shop-content
+    text-align: center
+    ul
+      position: relative
+      left: 0
+      li
+        list-style: none
+        margin: auto
+        width: 180px
+        display: inline-block
+        padding: 5px
+        background-color: $grey
+        font-size: 24px
+        font-weight: 800
+        color: $grey
+        border: solid 2px black
+        transition: all .25s ease
+        color: $accent
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        &:hover
+          background-color: $accent
+          color: $grey
+        &.active
+          background-color: $accent
+          color: $grey
+        &:nth-child(1)
+          border-right: 0px
+          border-bottom-left-radius: 1em
+          border-top-left-radius: 1em
+        &:nth-child(2)
+          border-left: 0px
+          transform: translateX(-10px)
+          border-top-right-radius: 1em
+          border-bottom-right-radius: 1em
+
+.shop-pieces
+  padding-top: 30px
+  .shop-piece
+    height: 100%
+    width: 90%
+    margin-left: 20px
+    border: solid 2px $dark
+    padding: 5px
+    border-radius: 1em
+    img
+      width: 70%
+      height: 110px
+    p
+      font-size: 20px
+    span
+      font-size: 20px
+      padding-right: 25px
+      font-family: 'firasans'
+    a
+      font-size: 20px
+      font-family: 'firasans'
+      padding: 10px
+      background-color: #23c92c
+      color: white
 
 @import "media" // Всегда в конце
