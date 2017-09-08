@@ -36,7 +36,7 @@ $(function() {
 
 	$(".header-dog").on('click', function() {
 	    if(screen.width > 480) {
-            $(".header-cat").css('transform', 'translateX(150%)');
+            $(".header-cat").css('transform', 'translateX(250%)');
             $(".header-dog").css('transform', 'translateX(50%)');
             $(".header-hmb").fadeIn('slow');
         } else {
@@ -57,7 +57,7 @@ $(function() {
     $(".header-cat").on('click', function() {
         if(screen.width > 480) {
             $(".header-cat").css('transform', 'translateX(-50%)');
-            $(".header-dog").css('transform', 'translateX(-150%)');
+            $(".header-dog").css('transform', 'translateX(-250%)');
             $(".header-hmb").fadeIn('slow');
         } else {
             //$(".header-dog").slideUp('slow');

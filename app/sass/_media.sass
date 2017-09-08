@@ -25,6 +25,20 @@
       img
         width: 40%
 
+  .advertising
+    padding: 25px
+
+  .footer
+    padding: 35px
+    .footer-container
+      padding: 0px
+      .footer-right
+        text-align: left
+        ul
+          padding: 0
+        li
+          font-size: 18px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
@@ -57,6 +71,27 @@
           li
             width: 150px
             font-size: 22px
+    .ad-piece
+      width: 60%
+      margin: auto
+
+    .footer
+      .footer-container
+        display: flex
+        flex-direction: column
+        .footer-middle
+          order: 0
+        .footer-left
+          ul
+            padding-left: 0px
+          text-align: center
+          order: 1
+          a
+            font-size: 22px
+            font-weight: 600
+        .footer-right
+          text-align: center
+          order: 2
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)

@@ -91,6 +91,8 @@ body
   display: flex
   overflow: hidden
   background-color: $grey
+  background-image: url('../img/banner_background.jpg')
+  background-size: 100% 140%
   .hamburger
     position: absolute
     display: none
@@ -100,6 +102,7 @@ body
     left: 50%
     margin-left: -160px
     font-size: 42px
+    font-weight: 700
     font-family: 'Raleway', sans-serif
     z-index: 5
     white-space: nowrap
@@ -115,7 +118,7 @@ body
         border-color: whitesmoke
     p
       font-size: 28px
-      font-weight: 500
+      font-weight: 600
       white-space: nowrap
       font-family: 'Raleway', sans-serif
     img
@@ -125,6 +128,7 @@ body
       background-color: darken($grey, 10%)
       border-radius: 10em
       transition: all .5s ease
+      box-shadow: 0 0 3px black
       &:hover
         transform: scale(1.04)
         box-shadow: 0 0 5px black
@@ -174,9 +178,11 @@ body
 
 .shop
   border: solid 4px $accent
+  border-left: solid 2px $accent
+  border-right: solid 2px $accent
   background-color: whitesmoke
   font-family: 'Raleway', sans-serif
-  padding: 40px
+  padding: 50px 20px
   .shop-menu
     text-align: center
     p
@@ -266,5 +272,62 @@ body
       padding: 10px
       background-color: #23c92c
       color: white
+
+.advertising
+  padding: 50px
+  text-align: center
+  h2
+    margin: 5px
+    margin-bottom: 35px
+    font-size: 48px
+    font-family: 'Raleway', sans-serif
+    font-weight: 800
+    letter-spacing: 2px
+.ad-piece
+  text-align: center
+  img
+    width: 80%
+  p
+    font-size: 24px
+    font-family: 'Raleway', sans-serif
+    white-space: nowrap
+    strong
+      font-size: 32px
+
+.footer
+  padding: 40px
+  font-family: 'Raleway', sans-serif
+  background-color: darken($dark, 10%)
+  color: white
+  .footer-container
+    .footer-left
+      a
+        color: white
+        font-weight: 500
+        font-size: 20px
+        li
+          list-style: none
+    .footer-middle
+      text-align: center
+      font-size: 30px
+      p
+        font-weight: 700
+        margin: 0
+      .fa
+        margin: 0px 5px
+        transition: all .5s ease
+        &:hover
+          transform: scale(1.2)
+          color: $accent
+    .footer-right
+      text-align: right
+      font-size: 24px
+      li
+        list-style: none
+        font-size: 20px
+        white-space: nowrap
+      .fa
+        margin: 0px 15px
+        font-size: 24px
 
 @import "media" // Всегда в конце
