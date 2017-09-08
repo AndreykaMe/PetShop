@@ -24,4 +24,8 @@
     <li>Mobile-adaptive shop-section</li>
 </ul>
 <h2> Four Day </h2>
-
+<ul>
+    <li>Create advert-section + mobile</li>
+    <li>Create footer-section + mobile</li>
+</ul>
+    
